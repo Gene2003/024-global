@@ -20,10 +20,10 @@ export default function Home() {
 
   const fetchProducts = async () => {
     setProducts([
-      {id: '1', name: 'Fresh Apples', images: ['https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800'], price: 3.99 },
-      {id: '2', name: 'Organic Carrots', images: ['https://images.unsplash.com/photo-1582515073490-399813c1f3b9?w=800'], price: 2.49 },
-      {id: '3', name: 'Golden Wheat', images: ['https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=800'], price: 1.99 },
-      {id: '4', name: 'Fresh Bananas', images: ['https://images.unsplash.com/photo-1574226516831-e1dff420e43e?w=800'], price: 1.29 },
+      {id: '1', name: 'Fresh Beans', images: ['global/assets/home/products/beans.jpg'], price: 3.99 },
+      {id: '2', name: 'Organic Carrots', images: ['global/assets/home/products/potato.jpg'], price: 2.49 },
+      {id: '3', name: 'Golden Wheat', images: ['global/assets/home/products/wheat.jpg'], price: 1.99 },
+      {id: '4', name: 'Fresh Bananas', images: ['global/assets/home/products/bananas.jpg'], price: 1.29 },
     ]) // TODO: load from your API
     setLoading(false)
   }
@@ -132,7 +132,7 @@ export default function Home() {
         <View className='mb-8 p-4 bg-gray-100 rounded-xl items-center'>
           <Text className='text-lg font-bold text-center'>Subscribe to our newsletter for the latest updates!</Text>
           <Text className='text-center'>Sign up now and receive exclusive offers and discounts.</Text>
-          <TouchableOpacity className='mt-8 bg-primary px-9 py-5 rounded-full'>
+          <TouchableOpacity className='mt-8 bg-primary px-9 py-3 rounded-full'>
             <Text className='text-white font-bold'>Register</Text>
           </TouchableOpacity>
         </View>

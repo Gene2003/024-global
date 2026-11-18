@@ -27,5 +27,5 @@ export const BANNERS = [
 export const CATEGORIES = [
   { id: 'fruits', name: 'Fruits', icon: 'nutrition-outline' },
   { id: 'vegetables', name: 'Vegetables', icon: 'leaf-outline' },
-  { id: 'grains', name: 'Grains', icon: 'leaf-outline' },
+  { id: 'grains', name: 'Grains', icon: 'leaf' },
 ];

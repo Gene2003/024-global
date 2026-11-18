@@ -3,6 +3,7 @@ import React from 'react'
 import { Ionicons } from '@expo/vector-icons'
 import { Link, type Href } from 'expo-router'
 import { Product } from '../types'
+import { useWishlist } from '../context/WishlistContext'
 
 const { width } = Dimensions.get('window')
 const CARD_WIDTH = (width - 32 - 12) / 2 // screen padding 16+16, gap 12
@@ -13,6 +14,8 @@ type ProductCardProps = {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const imageUri = product.images?.[0]
+  const {toggleWishlist, isInWishlist} = useWishlist()
+
 
   return (
     <Link href={`/product/${product._id}` as Href} asChild>
